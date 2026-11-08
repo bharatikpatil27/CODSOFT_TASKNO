@@ -1,0 +1,13 @@
+CustomerID,Name,Age,Gender,City,PurchaseAmount,JoinDate
+101,Asha Rao,24,Female,Bengaluru,1250.50,2024-01-15
+102,Rohan Shah,,Male,Mysore,890,2024-02-03
+103,Meera Joshi,29,F,BANGALORE,1540.75,2024-02-18
+104,Arjun Nair,31,Male,Mysuru,,18/03/2024
+105,Sara Khan,27,female,Hubli,760,2024-03-22
+106,Dev Patel,22,M,Belgaum,1120,2024-04-01
+107,Nisha Shetty,,Female,Bengaluru,980.25,2024-04-11
+108,Kabir Das,35,Male,Hubli,2100,2024-04-19
+103,Meera Joshi,29,F,BANGALORE,1540.75,2024-02-18
+109,Ira Kulkarni,26,female,Belgaum,1340,2024-05-02
+110,Vikram Rao,41,Male,Mysore,1875.50,2024-05-16
+111,Anaya Gupta,23,F,Bangalore,650,2024-05-28

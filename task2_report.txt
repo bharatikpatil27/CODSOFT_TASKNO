@@ -1,0 +1,67 @@
+RETAIL SALES - EXPLORATORY DATA ANALYSIS
+==================================================
+
+Total Records: 1000
+Total Columns: 9
+
+COLUMN INFORMATION:
+Transaction ID               int64
+Date                datetime64[us]
+Customer ID                    str
+Gender                         str
+Age                          int64
+Product Category               str
+Quantity                     int64
+Price per Unit               int64
+Total Amount                 int64
+dtype: object
+
+DESCRIPTIVE STATISTICS:
+        Transaction ID                        Date Customer ID  Gender         Age Product Category     Quantity  Price per Unit  Total Amount
+count      1000.000000                        1000        1000    1000  1000.00000             1000  1000.000000     1000.000000   1000.000000
+unique             NaN                         NaN        1000       2         NaN                3          NaN             NaN           NaN
+top                NaN                         NaN     CUST001  Female         NaN         Clothing          NaN             NaN           NaN
+freq               NaN                         NaN           1     510         NaN              351          NaN             NaN           NaN
+mean        500.500000  2023-07-03 00:25:55.200000         NaN     NaN    41.39200              NaN     2.514000      179.890000    456.000000
+min           1.000000         2023-01-01 00:00:00         NaN     NaN    18.00000              NaN     1.000000       25.000000     25.000000
+25%         250.750000         2023-04-08 00:00:00         NaN     NaN    29.00000              NaN     1.000000       30.000000     60.000000
+50%         500.500000         2023-06-29 12:00:00         NaN     NaN    42.00000              NaN     3.000000       50.000000    135.000000
+75%         750.250000         2023-10-04 00:00:00         NaN     NaN    53.00000              NaN     4.000000      300.000000    900.000000
+max        1000.000000         2024-01-01 00:00:00         NaN     NaN    64.00000              NaN     4.000000      500.000000   2000.000000
+std         288.819436                         NaN         NaN     NaN    13.68143              NaN     1.132734      189.681356    559.997632
+
+MISSING VALUES:
+Transaction ID      0
+Date                0
+Customer ID         0
+Gender              0
+Age                 0
+Product Category    0
+Quantity            0
+Price per Unit      0
+Total Amount        0
+
+DUPLICATE RECORDS REMOVED:
+0
+
+OUTLIER COUNTS:
+{'Transaction ID': 0, 'Age': 0, 'Quantity': 0, 'Price per Unit': 0, 'Total Amount': 0}
+
+SALES BY PRODUCT CATEGORY:
+Product Category
+Beauty         143515
+Clothing       155580
+Electronics    156905
+
+SALES BY GENDER:
+Gender
+Female    232840
+Male      223160
+
+CORRELATION MATRIX:
+                Transaction ID       Age  Quantity  Price per Unit  Total Amount
+Transaction ID        1.000000  0.065191 -0.026623       -0.060837     -0.075034
+Age                   0.065191  1.000000 -0.023737       -0.038423     -0.060568
+Quantity             -0.026623 -0.023737  1.000000        0.017501      0.373707
+Price per Unit       -0.060837 -0.038423  0.017501        1.000000      0.851925
+Total Amount         -0.075034 -0.060568  0.373707        0.851925      1.000000
